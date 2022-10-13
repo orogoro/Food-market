@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import popularAccept from '../helper/popular.json';
+// import popularAccept from '../helper/popular.json';
 
 const initialState = {
   cart: [],
   orders: [],
-  popular: [...popularAccept],
+  // popular: [...popularAccept],
 };
 
 export const shopSlice = createSlice({

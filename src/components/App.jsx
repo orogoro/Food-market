@@ -1,33 +1,33 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
-import { Navigation, Loader } from './shops';
-import { ToastContainer } from 'react-toastify';
 
-const Shops = lazy(() => import('../pages/shops/Shops'));
-const ShoppingCart = lazy(() => import('../pages/shoppingCart/ShoppingCart'));
-const History = lazy(() => import('../pages/history/History'));
-const Home = lazy(() => import('../pages/homePage/HomePage'));
-const ShopsMenuList = lazy(() =>
-  import('./shops/shopsSection/shopsMenuList/ShopsMenuList')
-);
+import { Loader, Header } from './shops';
+// import { ToastContainer } from 'react-toastify';
+
+const ProductList = lazy(() => import('../pages/productList//ProductList'));
+const Product = lazy(() => import('../pages/product/Product'));
+// const ShoppingCart = lazy(() => import('../pages/shoppingCart/ShoppingCart'));
+// const History = lazy(() => import('../pages/history/History'));
+// const Home = lazy(() => import('../pages/homePage/HomePage'));
+// const ShopsMenuList = lazy(() =>
+//   import('./shops/shopsSection/shopsMenuList/ShopsMenuList')
+// );
 
 export const App = () => {
   return (
     <>
-      <Navigation />
+      <Header />
+
       <Suspense fallback={<Loader />}>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Shops" element={<Shops />}>
-            <Route path=":itemId" element={<ShopsMenuList />} />e
+          <Route path="/" element={<ProductList />}>
+            <Route path=":itemId" element={<Product />} />e
           </Route>
-          <Route path="Shopping_cart" element={<ShoppingCart />} />
-          <Route path="History" element={<History />} />
 
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
-      <ToastContainer
+      {/* <ToastContainer
         position="top-right"
         autoClose={3000}
         hideProgressBar={false}
@@ -37,7 +37,7 @@ export const App = () => {
         pauseOnFocusLoss={false}
         draggable
         pauseOnHover={false}
-      />
+      /> */}
     </>
   );
 };

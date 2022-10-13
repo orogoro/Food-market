@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ffcc26;
+  height: 100px;
+}
+
+.text {
+  //   font-family: 'Anek Telugu';
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #414141;
+
+  margin-right: 90px;
+}

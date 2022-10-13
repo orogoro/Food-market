@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Food-market/static/css/main.31fc82aa.css",
+    "main.js": "/Food-market/static/js/main.d6786042.js",
+    "static/js/922.3532ff90.chunk.js": "/Food-market/static/js/922.3532ff90.chunk.js",
+    "static/js/67.bb9522c8.chunk.js": "/Food-market/static/js/67.bb9522c8.chunk.js",
+    "index.html": "/Food-market/index.html",
+    "main.31fc82aa.css.map": "/Food-market/static/css/main.31fc82aa.css.map",
+    "main.d6786042.js.map": "/Food-market/static/js/main.d6786042.js.map",
+    "922.3532ff90.chunk.js.map": "/Food-market/static/js/922.3532ff90.chunk.js.map",
+    "67.bb9522c8.chunk.js.map": "/Food-market/static/js/67.bb9522c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31fc82aa.css",
+    "static/js/main.d6786042.js"
+  ]
+}

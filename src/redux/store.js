@@ -11,12 +11,12 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import shopSlice from './slice';
+import { mainReducer } from './reducers';
 
 const persistConfig = {
   key: 'shops',
   storage,
-  blacklist: ['popular'],
+  blacklist: ['productsReducer'],
 };
 
 const middleware = [
@@ -29,7 +29,7 @@ const middleware = [
 ];
 const store = configureStore({
   reducer: {
-    shops: persistReducer(persistConfig, shopSlice),
+    shops: persistReducer(persistConfig, mainReducer),
   },
   middleware,
   devTools: process.env.NODE_ENV === 'development',

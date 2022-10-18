@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 239px;
+  padding: 13px 15px;
+  margin: 15px;
+
+  background: #ffffff;
+  border: 1px dashed #414141;
+  border-radius: 30px;
+}
+
+.image {
+  border-radius: 30px;
+  width: 232px;
+}
+
+.name {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  height: 60px;
+  margin-top: 5px;
+  padding: 0 10px;
+
+  max-width: 200px;
+  overflow: hidden;
+  // text-overflow: ellipsis;
+
+  color: #414141;
+}
+
+.priceContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-top: 3px;
+}
+
+.price {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.likeContainer {
+  position: relative;
+  width: 31.5px;
+  height: 31.5px;
+  border-radius: 5px;
+  border: none;
+
+  &:hover .black {
+    background-color: #414141;
+  }
+}
+
+.like {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+
+  z-index: 999;
+}
+
+.black {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 25px;
+  height: 25px;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 800;
+}
+
+.blackAll {
+  background-color: #414141;
+}

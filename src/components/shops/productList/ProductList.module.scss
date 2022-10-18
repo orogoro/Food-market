@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  margin-left: auto;
+  width: 70%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  // justify-content: end;
+  list-style: none;
+}

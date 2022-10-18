@@ -1,0 +1,25 @@
+.container {
+  padding: 45px 30px;
+  background: #ffffff;
+  border: 2px dashed #414141;
+  border-radius: 30px;
+  width: 20%;
+  min-height: 800px;
+  height: 100%;
+}
+
+.title {
+  font-family: 'Anek Telugu';
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #414141;
+}
+
+.list {
+  margin-top: 27px;
+}

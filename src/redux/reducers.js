@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
 import { createReducer } from '@reduxjs/toolkit';
 import { fechAllProducts, fechOneProduct } from './operations';
-import { chooseProduct } from './actions';
+import { chooseProduct, deleteProduct } from './actions';
 
 const productsReducer = createReducer([], {
   [fechAllProducts.fulfilled]: (_, { payload }) => {
@@ -16,8 +16,12 @@ const oneProductReducer = createReducer(null, {
 });
 
 const chooseReducer = createReducer([], {
-  [chooseProduct.fulfilled]: (state, { payload }) => {
+  [chooseProduct]: (state, { payload }) => {
     return [...state, payload];
+  },
+  [deleteProduct]: (state, { payload }) => {
+    const stateFilter = state.filter(({ id }) => id !== payload);
+    return stateFilter;
   },
 });
 

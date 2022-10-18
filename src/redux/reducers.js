@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { createReducer } from '@reduxjs/toolkit';
-import { fechAllProducts, fechOneProduct } from './phonebook-operations';
+import { fechAllProducts, fechOneProduct } from './operations';
 import { chooseProduct } from './actions';
 
 const productsReducer = createReducer([], {

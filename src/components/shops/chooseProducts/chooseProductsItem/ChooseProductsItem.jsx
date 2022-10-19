@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 import { deleteProduct } from '../../../../redux/actions';
 import { fechOneProduct } from '../../../../redux/operations';
@@ -34,3 +35,10 @@ function ChooseProductsItem({ id, name, price, image }) {
 }
 
 export default ChooseProductsItem;
+
+ChooseProductsItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+};

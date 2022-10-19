@@ -1,4 +1,5 @@
 import styles from './ImageModal.module.scss';
+import PropTypes from 'prop-types';
 
 function ImageModal({ active, setActive, picture }) {
   return (
@@ -17,3 +18,9 @@ function ImageModal({ active, setActive, picture }) {
 }
 
 export default ImageModal;
+
+ImageModal.propTypes = {
+  active: PropTypes.bool.isRequired,
+  setActive: PropTypes.func.isRequired,
+  picture: PropTypes.string.isRequired,
+};

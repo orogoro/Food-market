@@ -17,7 +17,12 @@ function ChooseProducts() {
         <h2 className={styles.title}>Favorites</h2>
         <button
           className={styles.clearButton}
-          onClick={() => dispatch(clearProducts([]))}
+          onClick={() => {
+            if (products.length === 0) {
+              return;
+            }
+            dispatch(clearProducts([]));
+          }}
         >
           Clear All
         </button>

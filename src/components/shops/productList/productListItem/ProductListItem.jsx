@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import { productsAPI } from '../../../../axiosAPI';
 import { fechOneProduct } from '../../../../redux/operations';
@@ -19,6 +20,7 @@ function ProductListItem({
 }) {
   const [picture, setPicture] = useState('');
   const dispatch = useDispatch();
+  console.log(favorites);
 
   const active = favorites.find(item => item.id === id);
 
@@ -57,3 +59,19 @@ function ProductListItem({
 }
 
 export default ProductListItem;
+
+ProductListItem.propTypes = {
+  id: PropTypes.number.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  addToFavorites: PropTypes.func.isRequired,
+  favorites: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      picture: PropTypes.string.isRequired,
+    })
+  ),
+};

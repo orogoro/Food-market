@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Food-market/static/css/main.657362db.css",
-    "main.js": "/Food-market/static/js/main.6784839b.js",
+    "main.js": "/Food-market/static/js/main.559d9c9b.js",
     "static/css/124.21e3cd35.chunk.css": "/Food-market/static/css/124.21e3cd35.chunk.css",
     "static/js/124.eb0df3cd.chunk.js": "/Food-market/static/js/124.eb0df3cd.chunk.js",
     "static/css/741.318e1533.chunk.css": "/Food-market/static/css/741.318e1533.chunk.css",
@@ -9,7 +9,7 @@
     "index.html": "/Food-market/index.html",
     "static/media/like.svg": "/Food-market/static/media/like.79e820ef519565bb2b20e5a3f4011ed3.svg",
     "main.657362db.css.map": "/Food-market/static/css/main.657362db.css.map",
-    "main.6784839b.js.map": "/Food-market/static/js/main.6784839b.js.map",
+    "main.559d9c9b.js.map": "/Food-market/static/js/main.559d9c9b.js.map",
     "124.21e3cd35.chunk.css.map": "/Food-market/static/css/124.21e3cd35.chunk.css.map",
     "124.eb0df3cd.chunk.js.map": "/Food-market/static/js/124.eb0df3cd.chunk.js.map",
     "741.318e1533.chunk.css.map": "/Food-market/static/css/741.318e1533.chunk.css.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.657362db.css",
-    "static/js/main.6784839b.js"
+    "static/js/main.559d9c9b.js"
   ]
 }

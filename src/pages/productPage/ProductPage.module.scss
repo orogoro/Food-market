@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  display: flex;
+  margin-top: 80px;
+  margin-left: 100px;
+  padding: 0 20px;
+  width: 67%;
+
+  @media screen and (max-width: 1440px) {
+    margin-left: 50px;
+  }
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  display: block;
+  width: 448px;
+
+  @media screen and (max-width: 1440px) {
+    width: 400px;
+  }
+}
+
+.zoom {
+  margin-top: 25px;
+  cursor: pointer;
+}
+
+.containerInformation {
+  margin-left: 136px;
+  padding: 20px 0;
+  width: 600px;
+
+  @media screen and (max-width: 1440px) {
+    width: 100%;
+    margin-left: 50px;
+  }
+}
+
+.name {
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 96px;
+
+  color: #414141;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 44px;
+  }
+}
+
+.priceContainer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 96px;
+
+  color: #414141;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 44px;
+  }
+}
+
+.likeContainer {
+  position: relative;
+  width: 85.75px;
+  height: 85.75px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+
+  &:hover .black {
+    background-color: #414141;
+  }
+
+  @media screen and (max-width: 1440px) {
+    width: 65.75px;
+    height: 65.75px;
+  }
+}
+
+.like {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 100%;
+
+  z-index: 999;
+}
+
+.black {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 70.75px;
+  height: 70.75px;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  z-index: 800;
+
+  @media screen and (max-width: 1440px) {
+    width: 55.75px;
+    height: 55.75px;
+  }
+}
+
+.blackAll {
+  background-color: #414141;
+}
+
+.buttonBack {
+  position: absolute;
+  top: -80px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  height: 60px;
+  border: none;
+  background-color: #e8e8e8;
+  cursor: pointer;
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  // width: 20px;
+  &:hover {
+    box-shadow: 0 0 3px 1px #8a8a8a;
+  }
+
+  @media screen and (max-width: 1440px) {
+    height: 50px;
+  }
+}
+
+.backImage {
+  width: 50px;
+
+  @media screen and (max-width: 1440px) {
+    width: 40px;
+  }
+}

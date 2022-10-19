@@ -16,4 +16,8 @@
   color: #414141;
 
   margin-right: 90px;
+
+  @media screen and (max-width: 1440px) {
+    font-size: 28px;
+  }
 }

@@ -2,7 +2,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
 import { Loader, Header } from './shops';
-// import { ToastContainer } from 'react-toastify';
 
 const ProductList = lazy(() =>
   import('../pages/productListPage/ProductListPage')
@@ -23,18 +22,6 @@ export const App = () => {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
-
-      {/* <ToastContainer
-        position="top-right"
-        autoClose={3000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss={false}
-        draggable
-        pauseOnHover={false}
-      /> */}
     </>
   );
 };

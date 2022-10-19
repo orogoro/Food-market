@@ -14,4 +14,8 @@ const chooseProduct = createAction(
 
 const deleteProduct = createAction('shops/delete_product');
 
-export { chooseProduct, deleteProduct };
+const deleteOneProduct = createAction('shops/delete_oneProduct');
+
+const clearProducts = createAction('shops/clear_AllProducts');
+
+export { chooseProduct, deleteProduct, deleteOneProduct, clearProducts };

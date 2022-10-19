@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 import { productsAPI } from '../../../../axiosAPI';
+import { fechOneProduct } from '../../../../redux/operations';
 
 import like from '../../../../image/like.svg';
 
@@ -16,6 +18,7 @@ function ProductListItem({
   favorites,
 }) {
   const [picture, setPicture] = useState('');
+  const dispatch = useDispatch();
 
   const active = favorites.find(item => item.id === id);
 
@@ -33,7 +36,9 @@ function ProductListItem({
 
   return (
     <li className={styles.container}>
-      <img className={styles.image} src={picture} alt={name} />
+      <Link to={`${id}`} onClick={() => dispatch(fechOneProduct(id))}>
+        <img className={styles.image} src={picture} alt={name} />
+      </Link>
       <p className={styles.name}>{name}</p>
       <div className={styles.priceContainer}>
         <p className={styles.price}>{`$ ${price}`}</p>

@@ -20,7 +20,6 @@ function ProductListItem({
 }) {
   const [picture, setPicture] = useState('');
   const dispatch = useDispatch();
-  console.log(favorites);
 
   const active = favorites.find(item => item.id === id);
 

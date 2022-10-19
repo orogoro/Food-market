@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
+import ReactImageMagnify from 'react-image-magnify';
 
 import { getChoosesProducts, getOneProduct } from '../../redux/selectors';
 import {
@@ -59,7 +60,23 @@ function ProductPage() {
   return (
     <div className={styles.container}>
       <div className={styles.imageContainer}>
-        <img className={styles.image} src={picture} alt={name} />
+        {/* <img className={styles.image} src={picture} alt={name} /> */}
+        <ReactImageMagnify
+          {...{
+            smallImage: {
+              alt: name,
+              // isFluidWidth: true,
+              width: 428,
+              height: 428,
+              src: picture,
+            },
+            largeImage: {
+              src: picture,
+              width: 1000,
+              height: 1000,
+            },
+          }}
+        />
         <img
           className={styles.zoom}
           src={zoom}

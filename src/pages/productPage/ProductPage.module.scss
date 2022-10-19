@@ -4,7 +4,7 @@
   margin-top: 80px;
   margin-left: 100px;
   padding: 0 20px;
-  width: 67%;
+  width: 66%;
 
   @media screen and (max-width: 1440px) {
     margin-left: 50px;
@@ -20,9 +20,11 @@
 .image {
   display: block;
   width: 448px;
+  height: 448px;
 
   @media screen and (max-width: 1440px) {
     width: 400px;
+    height: 400px;
   }
 }
 
